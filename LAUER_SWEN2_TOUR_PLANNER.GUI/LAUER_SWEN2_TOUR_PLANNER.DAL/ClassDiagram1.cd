@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.DAL.ConfigMapper" Collapsed="true">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAABIAAAAgAAAAIAAABAEAAAAQAAAQACAAIAAAAAA=</HashCode>
+      <FileName>ConfigMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.DAL.IOHelper" Collapsed="true">
+    <Position X="8.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.DAL.UnitOfWork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEBAACAAAAACAAQAAAgAAAAAAAAAAAFAAgAAwAA=</HashCode>
+      <FileName>UnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.DAL.Repositories.TourLogRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEYAAABAAAAAAAAgAAAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Repositories\TourLogRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.DAL.Repositories.TourRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAABAAAAAAAAgAAAAAAAAAAEAAAAAAgAAAAAAAIg=</HashCode>
+      <FileName>Repositories\TourRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.DAL.Exceptions.NoValidConfigException" Collapsed="true">
+    <Position X="10.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\NoValidConfigException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="LAUER_SWEN2_TOUR_PLANNER.DAL.IRepository&lt;TEntity&gt;" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Repositories\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LAUER_SWEN2_TOUR_PLANNER.DAL.IUnitOfWork">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

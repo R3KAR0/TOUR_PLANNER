@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.CustomExceptions.AlreadyExistsException" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomExceptions\AlreadyExistsException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.CustomExceptions.ConfigMapperException" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomExceptions\ConfigMapperException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.CustomExceptions.CreationFailedException" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomExceptions\CreationFailedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.CustomExceptions.InvalidCharactersException" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomExceptions\InvalidCharactersException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.CustomExceptions.NoResultException" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomExceptions\NoResultException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.CustomExceptions.NoToursToImportException" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomExceptions\NoToursToImportException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.CustomExceptions.PictureNullException" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomExceptions\PictureNullException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.CustomExceptions.UpdateFailedException" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomExceptions\UpdateFailedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.Reports.ReportCreator" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAoAAAAABAAgAABAAQABAAAAAAAAAAAAAAAEACQAg=</HashCode>
+      <FileName>Reports\ReportCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.TourLogs.TourLogsLogic" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourLogs\TourLogsLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.Tours.IOLogic" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Tours\IOLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.BL.Tours.TourLogic">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIACAAAAIAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tours\TourLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

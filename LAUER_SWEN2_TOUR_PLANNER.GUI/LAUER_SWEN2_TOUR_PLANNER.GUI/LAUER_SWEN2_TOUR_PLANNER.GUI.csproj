@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.11.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LAUER_SWEN2_TOUR_PLANNER.DAL\LAUER_SWEN2_TOUR_PLANNER.DAL.csproj" />
+    <ProjectReference Include="..\LAUER_SWEN2_TOUR_PLANNER.LOGIC\LAUER_SWEN2_TOUR_PLANNER.BL.csproj" />
+    <ProjectReference Include="..\LAUER_SWEN2_TOUR_PLANNER.MAPQUEST\LAUER_SWEN2_TOUR_PLANNER.MAPQUEST.csproj" />
+    <ProjectReference Include="..\LAUER_SWEN2_TOUR_PLANNER.MODEL\LAUER_SWEN2_TOUR_PLANNER.MODEL.csproj" />
+  </ItemGroup>
+
+</Project>

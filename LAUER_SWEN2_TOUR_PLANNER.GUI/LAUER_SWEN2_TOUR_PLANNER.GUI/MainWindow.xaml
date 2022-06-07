@@ -1,0 +1,123 @@
+﻿<Window x:Class="LAUER_SWEN2_TOUR_PLANNER.GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAUER_SWEN2_TOUR_PLANNER.GUI"
+        xmlns:view="clr-namespace:LAUER_SWEN2_TOUR_PLANNER.GUI.Windows.View"
+        xmlns:viewmodels="clr-namespace:LAUER_SWEN2_TOUR_PLANNER.GUI.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" MinWidth="650" MinHeight="500" Height="600" Width="800" ResizeMode="CanResize">
+    <Window.DataContext>
+        <viewmodels:ToursViewModel/>
+    </Window.DataContext>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" FontSize="14">
+            <MenuItem Header="File">
+                <MenuItem Header="Export Tours" Command="{Binding ExportToursCommand}"/>
+                <MenuItem Header="Import Tours" Command="{Binding ImportToursCommand}"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Add Tour" Command="{Binding OpenCreateTourViewCommand}"/>
+                <MenuItem Header="Modify Tour" Command="{Binding UpdateTourCommand}"/>
+                <MenuItem Header="Delete Tour" Command="{Binding DeleteTourCommand}"/>
+                <MenuItem Header="Add Tourlog" Command="{Binding OpenCreateTourLogsViewCommand}"/>
+                <MenuItem Header="Modify Tourlog" Command="{Binding UpdateTourLogCommand}"/>
+                <MenuItem Header="Delete Tourlog" Command="{Binding DeleteTourLogCommand}"/>
+            </MenuItem>
+            <MenuItem Header="Report">
+                <MenuItem Header="_Create Report Of Selected Tour" Command="{Binding CreateSummeryCommand}"/>
+                <MenuItem Header="_Create Summarized Report" Command="{Binding CreateReportOfTour}"/>
+            </MenuItem>
+        </Menu>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox Text="{Binding SearchBar, Mode=TwoWay}" Grid.Column="0"/>
+            <Button Content="Search" Grid.Column="1" Padding="5, 0" Command="{Binding FullTextSearch}"/>
+            <Button Content="Reset" Grid.Column="2" Padding="5, 0" Command="{Binding ResetCommand}"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <DockPanel Grid.Column="0">
+                <Label Content="Tours" DockPanel.Dock="Top" HorizontalAlignment="Center" />
+                <ListBox ItemsSource="{Binding Tours, Mode=OneWay}" SelectedItem="{Binding TourViewModel,Mode=TwoWay}" />
+            </DockPanel>
+            <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch"></GridSplitter>
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <DockPanel Grid.Row="0">
+                    <Grid DockPanel.Dock="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <!--<Button Grid.Column="0" Content="Route" />
+                        <Button Grid.Column="1" Content="Description" /> -->
+                    </Grid>
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Left" MinWidth="350" MaxWidth="350">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="27*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="50*" />
+                                <ColumnDefinition Width="4*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0" Grid.Row="0" Content="{Binding TourViewModel.Tour.Name}" ContentStringFormat="Name: {0}" Grid.ColumnSpan="2" Margin="0,0,10,0"/>
+                            <Label Grid.Column="0" Grid.Row="1" Content="{Binding TourViewModel.Tour.From}" ContentStringFormat="From: {0}" Grid.ColumnSpan="2" Margin="0,0,10,0" />
+                            <Label Grid.Column="0" Grid.Row="2" Content="{Binding TourViewModel.Tour.To}" ContentStringFormat="To: {0}" Grid.ColumnSpan="2" Margin="0,0,10,0" />
+                            <Label Grid.Column="0" Grid.Row="3" Content="{Binding TourViewModel.Tour.TransportType}" ContentStringFormat="TransportType: {0}" Grid.ColumnSpan="2" Margin="0,0,10,0" />
+                            <Label Grid.Column="0" Grid.Row="4" Content="{Binding TourViewModel.Tour.Distance}" ContentStringFormat="Distance: {0}km" Grid.ColumnSpan="2" Margin="0,0,10,0" />
+                            <Label Grid.Column="0" Grid.Row="5" Content="{Binding TourViewModel.EstimatedTime}" ContentStringFormat="EstimatedTime: {0}" Grid.ColumnSpan="2" Margin="0,0,10,0" />
+                            <Label Grid.Column="0" Grid.Row="6" Content="{Binding TourViewModel.Description}" ContentStringFormat="Description: {0}" Grid.ColumnSpan="2" Margin="0,0,10,0" />
+                            <Label Grid.Column="0" Grid.Row="7" Content="{Binding TourViewModel.Rating}" ContentStringFormat="Rating average: {0}" Grid.ColumnSpan="2" Margin="0,0,10,0" />
+                            <Label Grid.Column="0" Grid.Row="8" Content="{Binding TourViewModel.MedianDifficulty}" Grid.ColumnSpan="2" Margin="0,0,10,0" />
+                        </Grid>
+                    </ScrollViewer>
+                    <Grid>
+                        <!--<Image Source="{Binding TourViewModel.Picture}"/>-->
+                        <view:MapView x:Name="MapV"></view:MapView>
+                    </Grid>
+                </DockPanel>
+                <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" />
+                <DockPanel Grid.Row="2">
+                    <Label Content="Logs" DockPanel.Dock="Top" HorizontalAlignment="Center" />
+                    <DataGrid AutoGenerateColumns="false"  ItemsSource="{Binding ToursLogs}" SelectedItem="{Binding TourLogViewModel}"
+                        SelectionMode="Extended" SelectionUnit="FullRow">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Rating" Binding="{Binding TourRating}"/>
+                            <DataGridTextColumn Header="Difficulty" Binding="{Binding TourDifficulty}" />
+                            <DataGridTextColumn Header="Comment" Binding="{Binding Comment}" />
+                            <DataGridTextColumn Header="Total Time" Binding="{Binding TotalTime}" />
+                            <DataGridTextColumn Header="Timestamp" Binding="{Binding CreationDate}" />
+                        </DataGrid.Columns>
+
+                    </DataGrid>
+                </DockPanel>
+            </Grid>
+        </Grid>
+    </DockPanel>
+</Window>

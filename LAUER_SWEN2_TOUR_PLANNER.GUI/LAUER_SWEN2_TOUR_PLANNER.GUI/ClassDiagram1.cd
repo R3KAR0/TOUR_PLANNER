@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.ViewModels.AViewModel" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.ViewModels.CreateTourLogView" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIEEQACAAAEEBAAIEBEAAAEAgABAAAAAACCBAA=</HashCode>
+      <FileName>ViewModels\CreateTourLogView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.ViewModels.CreateViewModel" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAIAIAAQAhQAAEEAAAAERAAgAMAAAAAAAAACCAAAA=</HashCode>
+      <FileName>ViewModels\CreateViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.ViewModels.TourLogUpdateView" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEIEAQAgAUAAAAAAAEBAAAAAAAEAAAAAAACCAAA=</HashCode>
+      <FileName>ViewModels\TourLogUpdateView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.ViewModels.TourLogViewModel" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAABAAEAAAkAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TourLogViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.ViewModels.ToursViewModel" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQBAAEBAADIFIAIgggACAABAgAIEAMAAAGFAHUGAAA=</HashCode>
+      <FileName>ViewModels\ToursViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.ViewModels.TourUpdateView" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgQQAEIAAQAgQAAAAAAAAEQAAAAIAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ViewModels\TourUpdateView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.ViewModels.TourViewModel" Collapsed="true">
+    <Position X="20.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAggAAACQAgAAAEAAAAAAQAAAAIAAHAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TourViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.Exceptions.ViewModelNullException" Collapsed="true">
+    <Position X="26.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ViewModelNullException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.Windows.View.MapView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\View\MapView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.Windows.CreateNewTourWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\CreateNewTourWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.Windows.CreateTourLogWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\CreateTourLogWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.Windows.EditTourWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\EditTourWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LAUER_SWEN2_TOUR_PLANNER.GUI.Windows.UpdateTourLogWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\UpdateTourLogWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
